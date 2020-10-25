@@ -97,9 +97,7 @@ After cloning, the ghostHunter module will be located at `assets/ghostHunter/dis
 
 To test the module in your template, add the following line, after JQuery is loaded. Typically this will be near the bottom of a file `default.hbs`, in the top folder of the theme directory.
 
-````html
-<script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
-````
+
 
 You will need to add a search box to your pages. The specific `.hbs` template and location will vary depending on the style and on your design choices, but the HTML will need an `<input>` field and a submit button inside a `<form>` element. A block like this should do the trick:
 
@@ -270,9 +268,7 @@ item_preprocessor: function(item) {
 ````
 > With the sample function above, ``result_template`` could be set to something like this:
 
-````javascript
-result_template: '<p>{{#if recent}}NEW! {{/if}}{{title}}</p>'
-````
+
 > Default value is ``false``.
 
 :arrow_right: **indexing_start**
